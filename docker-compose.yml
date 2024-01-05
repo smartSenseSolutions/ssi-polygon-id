@@ -1,0 +1,22 @@
+version: "3"
+services:
+    ssi-be:
+        build:
+            context: ./backend/.
+        ports:
+            - 4007:4007
+        environment:
+            NGROK_URL: "${NGROK_URL}"
+            RPC_URL_MUMBAI: "${RPC_URL_MUMBAI}"
+            PORT: "${PORT:-4007}"
+            FRONTEND_URL: "${FRONTEND_URL:-*}"
+            VERIFIER_DID: "${VERIFIER_DID:-did:polygonid:polygon:mumbai:2qDyy1kEo2AYcP3RT4XGea7BtxsY285szg6yP9SPrs}"
+        restart: always
+    ssi-fe:
+        build:
+            context: ./frontend/.
+        ports:
+            - 8000:80
+        restart: always
+        depends_on:
+            - ssi-be
