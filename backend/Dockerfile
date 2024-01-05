@@ -4,8 +4,6 @@ WORKDIR /app
 
 COPY ./package*.json ./
 
-COPY ./yarn.lock ./
-
 RUN npm ci
 
 RUN npm install typescript@4.7.2 pm2@5.2.0 -g
