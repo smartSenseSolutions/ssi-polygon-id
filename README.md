@@ -60,7 +60,9 @@ To successfully run this project, ensure you have the following:
     -   Make sure you have enabled notifications for this app(if explicitly denied on your phone)
 -   **NGROK**: For NGROK setup instructions, refer to [ngrok.readme.md](./ngrok.readme.md).
 -   **RPC_URL**: To obtain the RPC_URL from Alchemy, follow the steps in [alchemy.readme.md](./alchemy.readme.md).
--   **Docker or Node.js**: To run the application locally on your system, you can either run using `Docker` or by starting the project locally using `node.js`
+-   **Docker or Node.js**: You can run the application locally on your system in following ways.
+    -   Run using [Docker](#run-using-docker) - You will need `Docker` and `docker compose` installed.
+    -   Run the project locally using [node.js](#run-locally) - You will need `node.js` installed.
 
 ## Setup
 
