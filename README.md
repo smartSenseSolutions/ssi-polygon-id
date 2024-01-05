@@ -62,7 +62,7 @@ To successfully run this project, ensure you have the following:
 -   **RPC_URL**: To obtain the RPC_URL from Alchemy, follow the steps in [alchemy.readme.md](./alchemy.readme.md).
 -   **Docker or Node.js**: You can run the application locally on your system in following ways.
     -   Run using [Docker](#run-using-docker) - You will need `Docker` and `docker compose` installed.
-    -   Run the project locally using [node.js](#run-locally) - You will need `node.js` installed.
+    -   Run the project locally using [node.js](#run-locally) - You will need `node.js` version `18` installed.
 
 ## Setup
 
